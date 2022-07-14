@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                    * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            section {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+            }
+            .container {
+                display: flex;
+                width: 60rem;
+                height: 30rem;
+                margin: auto;
+                background: #e0cda1;
+            }
+            .input-data {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 2em;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                width: 5rem;
+                padding: .6em 0;
+            }
+            form > *,
+            content > * {
+                padding-bottom: 1em;
+            }
+            .button {
+                padding: 0;
+            }
+            .output-data {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                background: #25c0e7;
+            }
+            .content > * {
+                padding-left: 2em;
+                padding-bottom: 1em;
+            }
+            @media (max-width: 60rem) {
+                .container {
+                    flex-direction: column;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 15rem;
+                }
+            }
+        form{
+            align-content: center;
+            font-size: large;
+        }
+    </style>
+<body>
+    <section>
+     <div class="contauner">
+        <div class="input-data">
+        </div>
+     </div>
+<form>
+ Số Thứ Nhất:
+ <input type="text" name="number">
+ <br><br><br>
+ Số Thứ hai:
+ <input type="text" name="number"><br><br>
+ 
+ <input type="radio" name="calculation" value="cong">+&nbsp&nbsp
+ <input type="radio" name="calculation" value="tru">-&nbsp&nbsp
+ <input type="radio" name="calculation" value="nhan">*&nbsp&nbsp
+ <input type="radio" name="calculation" value="chia">/<br><br>
+ 
+ <div class="button">
+    <input type="submit" value="Kết quả" id="submit">
+    <input type="reset" value="Hủy" id="reset">
+</div>
+</form>
+<div class="output-data">
+    <div class="content"></div>
+    </div>
+</div>
+</section>
+
+</body>
+<script>
+
+</script>
+</html>
